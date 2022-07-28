@@ -1,0 +1,542 @@
+@font-face {
+    font-family: 'paybooc-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1100px) {
+    html {
+        font-size: 48px;
+    }
+    .grid {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .text {
+        text-align: left;
+    }
+    h1, h2 {
+        margin-top: 35vh;
+    }
+    h1, h2, h3, h4, #app_store {
+        margin-left: 0.833rem;
+    }
+    #app_store {
+        width: 242px;
+        margin-top: 7vh;
+    }
+    .text, .image {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    .image > img, .image > video {
+        position: relative;
+        width: 7rem;
+        margin-top: 20vh;
+        margin-left: 30%;
+        z-index: 100;
+    }
+    .even .image > img, .even .image > video {
+        position: relative;
+        width: 7rem;
+        margin-top: 20vh;
+        margin-left: 10%;
+        z-index: 100;
+    }
+    .fifth h2 {
+        margin: 0;
+        margin-top: 14vh;
+        text-align: center;
+    }
+    .fifth .box {
+        width: 1020px;
+        margin: 0 auto;
+        padding-top: 75px;
+    }
+    .fifth .left, .fifth .right{
+        width: 220px;
+        float: left;
+    }
+    .fifth img {
+        margin: 0 15px;
+        display: block;
+        float: left;
+    }
+    .fifth h5 {
+        padding-top: 25px;
+    }
+    .fifth h4 {
+        height: 270px;
+    }
+    .fifth .left h4, .fifth .left h5 {
+        text-align: right;
+    }
+    .design {
+        position: absolute;
+        right: 0;
+        width: 27.5vw;
+        height: 100vh;
+        background-color: #BEBFAE;
+        z-index: 50;
+    }
+    .contribution > h1 {
+        margin-top: 25vh;
+    }
+    .contribution > div {
+        width: 942px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .dot {
+        width: 0.208rem;
+        height: 0.208rem;
+        border-radius: 0.104rem;
+        background-color: white;
+        margin: 0.208rem auto;
+        margin-bottom: 0.5rem;
+    }
+    .contribution > div > div {
+        width: 190px;
+        margin: 0 62px;
+        float: left;
+    }
+    .profile {
+        width: 190px;
+        height: 190px;
+        border-radius: 95px;
+        border: 2px solid white;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .contribution p:first-of-type {
+        font-size: 20px;
+        font-family: 'paybooc-Light';
+        font-weight: 600;
+        margin: 0 auto;
+        margin-top: 8vh;
+    }
+    .contribution p:last-of-type {
+        font-size: 15px;
+        font-family: 'paybooc-Light';
+        font-weight: 600;
+        line-height: 26px;
+        margin: 0 auto;
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1099px) {
+    html {
+        font-size: 40px;
+    }
+    .text {
+        text-align: left;
+    }
+    h1, h2 {
+        margin-top: 35vh;
+    }
+    h1, h2, h3, h4, #app_store {
+        margin-left: 0.833rem;
+    }
+    #app_store {
+        width: 242px;
+        margin-top: 7vh;
+    }
+    .text, .image {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    .image > img, .image > video {
+        position: relative;
+        width: 8rem;
+        margin-top: 20vh;
+        margin-left: 20%;
+        z-index: 100;
+    }
+    .fifth h2 {
+        margin: 0;
+        margin-top: 14vh;
+        text-align: center;
+    }
+    .fifth .box {
+        width: 1020px;
+        margin: 0 auto;
+        padding-top: 75px;
+    }
+    .fifth .left, .fifth .right{
+        width: 220px;
+        float: left;
+    }
+    .fifth img {
+        margin: 0 15px;
+        display: block;
+        float: left;
+    }
+    .fifth h5 {
+        padding-top: 25px;
+    }
+    .fifth h4 {
+        height: 270px;
+    }
+    .fifth .left h4, .fifth .left h5 {
+        text-align: right;
+    }
+    .design {
+        position: absolute;
+        right: 0;
+        width: 27.5vw;
+        height: 100vh;
+        background-color: rgba(191, 191, 191, 0.9);
+        z-index: 50;
+    }
+    .contribution > h1 {
+        margin-top: 25vh;
+    }
+    .contribution > div {
+        width: 942px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .dot {
+        width: 0.208rem;
+        height: 0.208rem;
+        border-radius: 0.104rem;
+        background-color: white;
+        margin: 0.208rem auto;
+        margin-bottom: 0.5rem;
+    }
+    .contribution > div > div {
+        width: 190px;
+        margin: 0 62px;
+        float: left;
+    }
+    .profile {
+        width: 190px;
+        height: 190px;
+        border-radius: 95px;
+        border: 2px solid white;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .contribution p:first-of-type {
+        font-size: 18px;
+        font-family: 'paybooc-Light';
+        font-weight: 600;
+        margin: 0 auto;
+        margin-top: 8vh;
+    }
+    .contribution p:last-of-type {
+        font-size: 15px;
+        font-family: 'paybooc-Light';
+        font-weight: 600;
+        line-height: 26px;
+        margin: 0 auto;
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    html {
+        font-size: 32px;
+    }
+    .text {
+        text-align: center;
+    }
+    h1, h2 {
+        margin-top: 10vh;
+    }
+    #app_store {
+        width: 200px;
+        margin-top: 2vh;
+    }
+    header .text {
+        width: 100%;
+        height: 35%;
+        float: left;
+    }
+    header .image {
+        width: 100%;
+        height: 65%;
+        float: left;
+    }
+    .even .text {
+        width: 100%;
+        height: 33%;
+        float: left;
+    }
+    .even .image {
+        width: 100%;
+        height: 67%;
+        float: left;
+    }
+    .odd .text {
+        width: 100%;
+        height: 28%;
+        float: left;
+    }
+    .odd .image {
+        width: 100%;
+        height: 72%;
+        float: left;
+    }
+    header .image > img, header .image > video {
+        display: block;
+        width: 8.7rem;
+        margin: 0 auto;
+        margin-top: 2.5vh;
+    }
+    .even .image > img, .even .image > video {
+        display: block;
+        width: 8.7rem;
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+    .odd .image > img, .odd .image > video {
+        display: block;
+        width: 8.7rem;
+        margin: 0 auto;
+        margin-top: 2.5vh;
+    }
+    .fifth h2 {
+        margin: 0;
+        margin-top: 12vh;
+        text-align: center;
+    }
+    .fifth .box {
+        width: 320px;
+        margin: 0 auto;
+        padding-top: 70px;
+        position: relative;
+    }
+    .fifth .left {
+        width: 160px;
+        float: left;
+    }
+    .fifth .right {
+        width: 160px;
+        float: left;
+        text-align: right;
+    }
+    .fifth img {
+        display: block;
+        position: absolute;
+        top: 180px;
+        width: 100%;
+    }
+    .fifth .bottom h5 {
+        padding-top: 350px;
+    }
+    .contribution > h1 {
+        margin-top: 8vh;
+    }
+    .contribution > div {
+        width: 470px;
+        margin: 3vh auto;
+        overflow: hidden;
+    }
+    .dot {
+        width: 0.208rem;
+        height: 0.208rem;
+        border-radius: 0.104rem;
+        background-color: white;
+        margin: 0.208rem auto;
+        margin-bottom: 0;
+    }
+    .contribution > div > div {
+        width: 340px;
+        margin: 0 62px;
+        float: left;
+    }
+    .profile {
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        border: 2px solid white;
+        margin: 0 auto;
+        overflow: hidden;
+        float: left;
+    }
+    .contribution p:first-of-type {
+        font-size: 18px;
+        font-family: 'paybooc-Light';
+        font-weight: 600;
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
+    .contribution p:last-of-type {
+        font-size: 15px;
+        font-family: 'paybooc-Light';
+        font-weight: 600;
+        line-height: 22px;
+        margin: 0 auto;
+        display: block;
+        width: 340px;
+        height: 140px;
+        padding-top: 50px;
+    }
+}
+    
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: #D8DF4F;
+    overflow: hidden;
+}
+    
+.even {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FDFEF1;
+    overflow: hidden;
+}
+    
+.odd {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+}
+    
+.contribution {
+    width: 100vw;
+    height: 100vh;
+    background-color: #D8DF4F;
+    text-align: center;
+    overflow: hidden;
+}
+
+.fifth {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+}
+
+.grid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'paybooc-Bold';
+    font-size: 1rem;
+    letter-spacing: -0.07rem;
+    line-height: 1.375rem;
+    color: black;
+}
+
+h2 {
+    font-family: 'paybooc-Bold';
+    font-size: 0.916rem;
+    letter-spacing: -0.07rem;
+    line-height: 1.27rem;
+    color: black;
+}
+    
+h3 {
+    font-family: 'paybooc-Light';
+    font-size: 0.375rem;
+    letter-spacing: -0.01rem;
+    line-height: 0.667rem;
+    color: #222317;
+    margin-top: 0.417rem;
+}
+    
+h4 {
+    font-family: 'paybooc-Light';
+    font-size: 0.354rem;
+    letter-spacing: -0.01rem;
+    line-height: 0.646rem;
+    color: #5D5E4A;
+    margin-top: 0.417rem;
+}
+
+h5 {
+    font-family: 'paybooc-Bold';
+    font-size: 0.6rem;
+    letter-spacing: -0.03rem;
+    line-height: 1.27rem;
+    color: black;
+}
+
+.fifth h4 {
+    margin: 0;
+}
+
+header a {
+    display: block;
+}
+    
+#logo {
+    position: absolute;
+    height: 1.354rem;
+    top: 0.833rem;
+    left: 0.833rem;
+    z-index: 1;
+}
+
+#logo img {
+    height: 1.354rem;
+    z-index: 100;
+}
+
+#more {
+    position: absolute;
+    top: 1rem;
+    right: 1.1rem;
+    z-index: 200;
+}
+
+.more {
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 0.6rem;
+    color: black;
+    text-decoration: none;
+}
+
+#name {
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 8vh;
+}
+
+.ycg {
+    width: 100%;
+    margin-top: -85px;
+}
+
+.lge {
+    width: 190%;
+    margin-left: -70px;
+    margin-top: -100px;
+}
+
+.hks {
+    width: 120%;
+    margin-left: -35px;
+}
