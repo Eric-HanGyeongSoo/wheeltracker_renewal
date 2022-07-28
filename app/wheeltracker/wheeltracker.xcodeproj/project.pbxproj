@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		B0DEF4F2289259F90097D435 /* wheeltrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF4F1289259F90097D435 /* wheeltrackerApp.swift */; };
-		B0DEF4F4289259F90097D435 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF4F3289259F90097D435 /* ContentView.swift */; };
+		B0DEF4F4289259F90097D435 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF4F3289259F90097D435 /* HomeView.swift */; };
 		B0DEF4F6289259FB0097D435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0DEF4F5289259FB0097D435 /* Assets.xcassets */; };
 		B0DEF4F9289259FB0097D435 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0DEF4F8289259FB0097D435 /* Preview Assets.xcassets */; };
+		B0DEF50228925CEB0097D435 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF50128925CEB0097D435 /* HomeViewModel.swift */; };
+		B0DEF50528925D830097D435 /* BackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF50428925D830097D435 /* BackgroundModifier.swift */; };
+		B0DEF50928925FCB0097D435 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF50828925FCB0097D435 /* MainTabView.swift */; };
+		B0DEF50D2892630B0097D435 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF50C2892630B0097D435 /* Color+Extension.swift */; };
+		B0DEF50F289264520097D435 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF50E289264520097D435 /* Image+Extension.swift */; };
+		B0DEF511289268AF0097D435 /* MonthStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF510289268AF0097D435 /* MonthStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0DEF4EE289259F90097D435 /* wheeltracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wheeltracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DEF4F1289259F90097D435 /* wheeltrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheeltrackerApp.swift; sourceTree = "<group>"; };
-		B0DEF4F3289259F90097D435 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0DEF4F3289259F90097D435 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B0DEF4F5289259FB0097D435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0DEF4F8289259FB0097D435 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0DEF50128925CEB0097D435 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B0DEF50428925D830097D435 /* BackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundModifier.swift; sourceTree = "<group>"; };
+		B0DEF50828925FCB0097D435 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B0DEF50C2892630B0097D435 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		B0DEF50E289264520097D435 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		B0DEF510289268AF0097D435 /* MonthStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				B0DEF4F1289259F90097D435 /* wheeltrackerApp.swift */,
-				B0DEF4F3289259F90097D435 /* ContentView.swift */,
-				B0DEF4F5289259FB0097D435 /* Assets.xcassets */,
+				B0DEF4FF28925C370097D435 /* View */,
+				B0DEF50028925C450097D435 /* ViewModel */,
+				B0DEF50328925D770097D435 /* ViewModifier */,
+				B0DEF50B289262FE0097D435 /* Extension */,
+				B0DEF50A289262E60097D435 /* Resources */,
 				B0DEF4F7289259FB0097D435 /* Preview Content */,
 			);
 			path = wheeltracker;
@@ -65,6 +80,49 @@
 				B0DEF4F8289259FB0097D435 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B0DEF4FF28925C370097D435 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0DEF50828925FCB0097D435 /* MainTabView.swift */,
+				B0DEF4F3289259F90097D435 /* HomeView.swift */,
+				B0DEF510289268AF0097D435 /* MonthStateView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0DEF50028925C450097D435 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B0DEF50128925CEB0097D435 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B0DEF50328925D770097D435 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				B0DEF50428925D830097D435 /* BackgroundModifier.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		B0DEF50A289262E60097D435 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0DEF4F5289259FB0097D435 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B0DEF50B289262FE0097D435 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B0DEF50C2892630B0097D435 /* Color+Extension.swift */,
+				B0DEF50E289264520097D435 /* Image+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0DEF4F4289259F90097D435 /* ContentView.swift in Sources */,
+				B0DEF50F289264520097D435 /* Image+Extension.swift in Sources */,
+				B0DEF511289268AF0097D435 /* MonthStateView.swift in Sources */,
+				B0DEF4F4289259F90097D435 /* HomeView.swift in Sources */,
+				B0DEF50D2892630B0097D435 /* Color+Extension.swift in Sources */,
+				B0DEF50528925D830097D435 /* BackgroundModifier.swift in Sources */,
 				B0DEF4F2289259F90097D435 /* wheeltrackerApp.swift in Sources */,
+				B0DEF50228925CEB0097D435 /* HomeViewModel.swift in Sources */,
+				B0DEF50928925FCB0097D435 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
